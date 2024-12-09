@@ -9,7 +9,7 @@ const messageContainer = document.getElementById('message-container');
 //CHAT
 //send message
 messageForm.addEventListener('submit', e => {
-   e.preventDefault();//prevent default form submission to stop page from reloading
+   e.preventDefault();//no reload
    const message = messageInput.value;
    console.log(message);
    appendMessage(message, 'You');
@@ -55,8 +55,8 @@ socket.on('receive-drawing', drawing => {
 
 
 //DRAW
-const canvas = document.querySelector('#draw'); //draw element
-const ctx = canvas.getContext('2d');//canvas context -> gives tools to make drawings 
+const canvas = document.querySelector('#draw'); //elemeng
+const ctx = canvas.getContext('2d');//canvas context 
 
 
 socket.on('message', socket => console.log(socket));
@@ -127,9 +127,8 @@ canvas.addEventListener('mousedown', () => {
    if (myTurn) {
        startDraw();
        socket.emit('startdraw');
-       console.log('DRAWWWWWWWWWING');
    } else {
-       console.log('not your turn sorry');
+       console.log('not your turn');
    }
 });
 
@@ -149,7 +148,7 @@ canvas.addEventListener('mouseout', () => {
 socket.on('send-drawing', () => {
    const drawing = canvas.toDataURL();
    socket.emit('whole-drawing', drawing);
-   console.log('Sending back drawing');
+   console.log('Sending drawing');
 });
 
 
@@ -184,7 +183,7 @@ function chooseWord(words) {
    textContainer.classList.add('choose-word');
    textContainer.classList.add('choose-word-text');
    buttonContainer.setAttribute('choose_word', 'note');
-   text.innerText = "It's your turn to draw! Choose a word: ";
+   text.innerText = "your turn to draw! pick a word: ";
 
 
    const buttons = words.map(word => {
