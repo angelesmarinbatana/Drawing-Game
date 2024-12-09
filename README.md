@@ -3,7 +3,7 @@
 
 **Required Installs**
 
-In terminal, run the following installs
+In terminal, run the following commands
 * npm install 
 * npm install express 
 * npm install socket.io
