@@ -9,7 +9,7 @@ const messageContainer = document.getElementById('message-container');
 //CHAT
 //send message
 messageForm.addEventListener('submit', e => {
-   e.preventDefault();
+   e.preventDefault();//prevent default form submission to stop page from reloading
    const message = messageInput.value;
    console.log(message);
    appendMessage(message, 'You');
@@ -55,8 +55,8 @@ socket.on('receive-drawing', drawing => {
 
 
 //DRAW
-const canvas = document.querySelector('#draw');
-const ctx = canvas.getContext('2d');
+const canvas = document.querySelector('#draw'); //draw element
+const ctx = canvas.getContext('2d');//canvas context -> gives tools to make drawings 
 
 
 socket.on('message', socket => console.log(socket));
@@ -153,7 +153,7 @@ socket.on('send-drawing', () => {
 });
 
 
-// ---- GAME ----
+// GAME
 let myTurn = false;
 socket.on('your-turn', function (msg) {
    myTurn = true;
