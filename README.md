@@ -1,12 +1,11 @@
 # CS 439 Drawing Game
 
-**notest**
-* git remote add [repo link]
-* git pull origin main
-* git status
-* git add .
-* message
-* git push -u origin main
+**Required Installs**
+In terminal, run the following installs
+* npm install 
+* npm install express 
+* npm install socket.io
+
 
 This is a dimple drawing game. The goal of the same is to guess what the opponent draws. 
 
