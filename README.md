@@ -1,6 +1,8 @@
 # CS 439 Drawing Game
+--
 
 **Required Installs**
+
 In terminal, run the following installs
 * npm install 
 * npm install express 
