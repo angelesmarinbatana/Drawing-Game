@@ -1,1 +1,3 @@
-this is the readme
+This folder contains
+* build intructions
+* user guide
