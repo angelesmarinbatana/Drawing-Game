@@ -1,16 +1,7 @@
 # CS 439 Drawing Game
 
+This is a simple drawing game. The goal of the game is to guess what the opponent draws. 
 
-**Required Installs**
+Build instructions can be found here: https://github.com/angelesmarinbatana/Drawing-Game/blob/main/documentation/build_instructions.md
 
-In terminal, run the following commands
-* npm install 
-* npm install express 
-* npm install socket.io
-
-
-This is a dimple drawing game. The goal of the same is to guess what the opponent draws. 
-
-Build instructions can be found here: 
-
-Game Instructions can be found here:
+Game Instructions can be found here: https://github.com/angelesmarinbatana/Drawing-Game/blob/main/documentation/user_guide.md
